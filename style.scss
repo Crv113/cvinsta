@@ -1,0 +1,210 @@
+/* Custom reset */
+p {
+    margin: 0;
+}
+
+/* Other css */
+
+body {
+    background-color: black;
+    font-family: 'Inter', sans-serif;
+    color: white;
+
+}
+
+.infos {
+    padding: 15px;
+
+    .topRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .profilePicture {
+            .imgWrap {
+
+                border: double 3px transparent;
+                border-radius: 50%;
+                background-image: linear-gradient(black, black), radial-gradient(circle at bottom left, orange, purple);
+                background-origin: border-box;
+                background-clip: padding-box, border-box;
+                padding: 3px;
+
+                img {
+                    width: 77px;
+                    height: 77px;
+                    background-color: red;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .numbers {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 65%;
+            .numberBox {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+
+                div {
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+
+                p {
+                    font-size: 13px;
+                    margin-top: 2px;
+                }
+            }
+        }
+    }
+
+    .infosBox {
+        .title {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .occupation {
+            font-size: 14px;
+            color: #A8A8A8;
+            font-weight: 500;
+        }
+
+        .info {
+            font-size: 14px;
+            margin-top: 2px;
+        }
+    }
+
+    .education {
+        .title {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .educationList {
+            display: flex;
+            .educationItem {
+                width: fit-content;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-right: 20px;
+
+                .storyWrap {
+                    border: 1px solid grey;
+                    padding: 3px;
+                    border-radius: 50%;
+                    width: fit-content;
+
+                    .story {
+                        width: 56px;
+                        height: 56px;
+                        border-radius: 50%;
+                        color: black;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 24px;
+
+                        &.bg1 {
+                            background-color: #b3e1f5;
+                        }
+
+                        &.bg2 {
+                            background-color: #f5b3b3;
+                        }
+
+                        &.bg3 {
+                            background-color: #def5b3;
+                        }
+                    }
+                }
+
+                .storyTitle {
+                    font-size: 12px;
+                    margin-top: 7px;
+                }
+            }
+        }
+    }
+}
+
+.posts {
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        .postsButtons {
+            width: 100%;
+            color: grey;
+            padding-bottom: 10px;
+
+            &.active {
+                color: white;
+                border-bottom: 2px solid white;
+            }
+        }
+    }
+
+    .identifyPostsList {
+        display: none;
+    }
+
+    .postsRow {
+        display: flex;
+        flex-direction: row;
+
+        &:not(:first-of-type) {
+            margin-top: 2px;
+        }
+        .post {
+            width: 33vw;
+            height: 33vw;
+
+            &:nth-child(2) {
+                margin-left: 2px;
+                margin-right: 2px;
+            }
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+
+            &.p1 {
+                background-color: #f89f9f;
+            }
+
+            &.p2 {
+                background-color: #a7f3ec;
+            }
+
+            &.p3 {
+                background-color: #e2b1ff;
+            }
+
+            &.p4 {
+                background-color: #ffe060;
+            }
+
+            &.p5 {
+                background-color: #a7a7ee;
+            }
+
+            &.p6 {
+                background-color: #d3ffb4;
+            }
+
+        }
+    }
+}
