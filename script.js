@@ -15,3 +15,7 @@ document.getElementById("identifyPosts").addEventListener("click", () => {
   document.getElementById("myPosts").classList.remove("active");
   document.getElementById("identifyPosts").classList.add("active");
 });
+
+document.querySelector(".imgWrap").addEventListener("click", () => {
+  console.log("story");
+});
